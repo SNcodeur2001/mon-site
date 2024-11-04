@@ -1,2 +1,93 @@
-<!-- <img src="../assets/images/1715851703962.jpg" alt="" > -->
+<!-- <body class="bg-slate-100 m-0 p-0">
+    <br>
+    <nav class="mx-auto w-2/4 rounded-2xl bg-slate-200 shadow-xl">
+      <ul class="flex justify-between items-center p-2">
+        <!-- Logo -->
+        <!-- <li>
+          <a routerlink="/home">
+            <img src="../../assets/images/1715851703962.jpg" alt="Logo" class="h-10">
+          </a>
+        </li>
+        <!-- Navigation Links -->
+       <!-- <div class="flex space-x-4">
+          <li class="text-sm hover:text-blue-400">
+            <a routerLink="/home">Accueil</a>
+          </li>
+          <li class="text-sm hover:text-blue-400">
+            <a routerLink="/projects">Projets</a>
+          </li>
+          <li class="text-sm hover:text-blue-400">
+            <a routerLink="/about" routerLinkActive="active">A propos</a>
+          </li>
+          <li class="text-sm hover:text-blue-400">
+            <a routerLink="/contact" routerLinkActive="active">Contacts</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <br><br><br><br><br>
 <router-outlet></router-outlet>
+</body>-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body class="font-nunito">
+    <div class="h-[50vh] bg-gradient-to-t from-indigo-200 lg:h-screen">
+      <nav class="fixed top-0 w-full">
+        <div class="container mx-auto flex items-center justify-between py-5">
+          <div class="flex items-center gap-2">
+            <a href="#"> <img src="https://th.bing.com/th/id/OIP.cAcaV1TMen4IaDQjfOnQeAHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="w-8" /></a>
+            <span>Logo</span>
+          </div>
+          <ul class="hidden items-center space-x-10 text-sm font-bold uppercase text-gray-600 md:flex">
+            <li class="hover:text-gray-400">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">About</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">Projects</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+
+
+          <a href="#"><img src="https://th.bing.com/th/id/OIP.4moSn5iSRWaJMjormoxYOwAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="hidden w-7 cursor-pointer md:block" /></a>
+          <div id="hamburger" class="cursor pointer cursor-pointer space-y-1 z-20 md:hidden" (click)="toggleMenu()">
+            <div [ngClass]="{'bg-black': !isMenuOpen, 'bg-white': isMenuOpen}" class="h-0.5 w-6"></div> 
+            <div [ngClass]="{'bg-black': !isMenuOpen, 'bg-white': isMenuOpen}" class="h-0.5 w-6"></div> 
+            <div [ngClass]="{'bg-black': !isMenuOpen, 'bg-white': isMenuOpen}" class="h-0.5 w-6"></div>
+          </div>
+          <ul *ngIf="isMenuOpen" id="menu" class="absolute left-0 top-0  w-full space-y-10 rounded-b-3xl bg-indigo-900 p-10 text-center text-white">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+
+
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
