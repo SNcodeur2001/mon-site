@@ -20,9 +20,11 @@
         <div class="container mx-auto flex items-center justify-between py-5">
 
           <!-- Logo et titre -->
-          <div class="flex items-center gap-2">
-            <a href="#"> <img src="https://th.bing.com/th/id/OIP.cAcaV1TMen4IaDQjfOnQeAHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="w-8" /></a>
-            <span>Logo</span>
+          <div class="">
+            <a href="#" class="flex gap-1 items-center"> 
+            <img src="../assets/images/1-removebg-preview.png" alt="" class="w-12" />
+            <span class="text-xl text-indigo-600 font-bold">Logo</span>
+          </a>
           </div>
          <!-- Logo et titre -->
 
@@ -45,7 +47,7 @@
 
 
           <!-- Icône de menu hamburger pour les petits écrans -->
-          <a href="#"><img src="https://th.bing.com/th/id/OIP.4moSn5iSRWaJMjormoxYOwAAAA?w=197&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="hidden w-7 cursor-pointer md:block" /></a>
+          <a href="#"><img src="../assets/images/croissant-de-lune.png" alt="" class="hidden w-7 cursor-pointer md:block" /></a>
           <div id="hamburger" class="cursor pointer cursor-pointer space-y-1 z-20 md:hidden" (click)="toggleMenu()">
             <div [ngClass]="{'bg-black': !isMenuOpen, 'bg-white': isMenuOpen}" class="h-0.5 w-6"></div> 
             <div [ngClass]="{'bg-black': !isMenuOpen, 'bg-white': isMenuOpen}" class="h-0.5 w-6"></div> 
@@ -100,13 +102,13 @@
    
     </div>
     <!--Section about me-->
-<section class="mt-10">
-  <div class="container mx-auto flex flex-col-reverse w-3/4 md:flex-row md:mx-auto md:w-3/4 md:mt-12 md:mb-12 ">
+<section class="pt-10">
+  <div class="container mx-auto flex flex-col-reverse w-3/4 md:flex-row md:mx-auto md:w-3/4 md:pt-12 md:pb-16 ">
     <!-- Image avatar -->
     <div class="mt-50 md:w-2/4 md:mt-10 ">
       <img
-        class="w-full"
-        src="../assets/images/2289_SkVNQSBGQU1PIDEwMjgtMTIx.jpg" alt="">
+        class="w-fit"
+        src="../assets/images/homme.png" alt="">
     </div>
     <!-- Text and Technologies -->
     <div class="md:w-2/4 md:h-10 space-y-5 md:mt-20">
@@ -153,6 +155,11 @@
       </div>
     </div>
   </div>
+</section>
+
+<!-- Portfolio -->
+<section class="h-96 bg-black">
+
 </section>
 
   </body>
