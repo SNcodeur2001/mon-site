@@ -1,6 +1,7 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -16,4 +17,6 @@ export class AppComponent {
   toggleMenu(){
     this.isMenuOpen = !this.isMenuOpen
   }
+  constructor(private viewportScroller: ViewportScroller) {}
+  scrollTo(anchor: string): void { this.viewportScroller.scrollToAnchor(anchor); }
 }
